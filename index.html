@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizki Rhamadiansyah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="portfolio-link">
+      <a href="portfolio.html" style="color: var(--accent); text-decoration: underline;">Lihat Portfolio &rarr;</a>
+    </div>
+    <img src="profil.jpeg" alt="Foto Rizki" />
+    <h1>Rizki Rhamadiansyah</h1>
+    <p>Freelancer Muda di Dunia Kreatif</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Bio</h2>
+
+      <p>Halo, saya <strong>Rizki Rhamadiansyah</strong>, lahir pada tahun <strong>2007</strong>, seorang freelancer muda yang bergerak di bidang kreatif digital. Dengan spesialisasi di bidang videografi, desain grafis, dan pengembangan web, saya berkomitmen memberikan hasil karya yang tidak hanya estetik, tapi juga berdampak dan fungsional. </p>
+        
+      <p>Saya percaya bahwa kreativitas adalah jembatan antara ide dan realita. Dengan latar belakang sebagai kreator visual dan pengembang web pemula yang sedang mempelajari Python, saya terus mengembangkan keahlian untuk menciptakan solusi visual dan digital yang berkelas.</p>
+    </div>
+
+    <div class="section">
+      <h2>Keahlian</h2>
+      <p>🎥 Videografi & Cinematic Editing</p>
+
+      <p>🎨 Desain Grafis & Branding</p>
+        
+      <p>🖥️ Web Development (HTML, CSS, JavaScript, belajar Python)</p>
+        
+      <p>✍️ Storytelling Visual</p>
+        
+      <p>🚀 Kreativitas & Problem Solving</p>
+    </div>
+
+    <div class="section">
+      <h2>Kontak & Sosial Media</h2>
+      <div class="socials">
+        <a href="https://instagram.com/rizkitrxstar" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/6285861911241" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="audio.mp3" type="audio/mpeg" />
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <script>
+    const audio = document.getElementById('bg-music');
+    const playMusic = () => {
+      audio.play().catch(e => {
+        console.log('Autoplay diblokir:', e);
+      });
+    };
+    document.addEventListener('click', playMusic);
+  </script>
+  
+  <footer>
+    &copy; 2025 Rizki Rhamadiansyah. All rights reserved.
+  </footer>
+</body>
+</html>

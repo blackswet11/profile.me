@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Rizki Rhamadiansyah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="portfolio-link">
+      <a href="index.html" style="color: var(--accent); text-decoration: underline;">Kembali ke Home &larr;</a>
+    </div>
+    <img src="profil.jpeg" alt="Foto Rizki" />
+    <h1>Portfolio</h1>
+    <p>Freelancer Muda di Dunia Kreatif</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Karya 1: Videografi</h2>
+      <p>"Karya ini merupakan salah satu proyek videografi pendek yang saya produksi untuk menggambarkan dinamika suasana dan estetika visual secara sinematik. Dengan pendekatan storytelling yang kuat dan tone warna yang hangat, video ini menyampaikan pesan emosional melalui pergerakan kamera yang halus dan komposisi gambar yang terstruktur. Setiap frame dirancang untuk menyatu dengan musik latar, menciptakan pengalaman visual yang immersive bagi penonton. Proyek ini menjadi representasi gaya khas saya dalam mengemas cerita melalui visual."</p>
+      <a href="https://www.instagram.com/reel/DBB0xjsgpFC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+      <img src="video1.jpg" alt="Karya 1" />
+      </a>
+    </div>
+
+    <div class="section">
+      <h2>Karya 2: Desain Grafis</h2>
+      <p>"Desain grafis bagi saya bukan sekadar visual yang menarik, melainkan media untuk menyampaikan pesan secara efektif dan emosional. Saya terbiasa membuat berbagai jenis desain, mulai dari branding, poster, konten media sosial, hingga presentasi visual yang konsisten dan selaras dengan identitas klien. Setiap proyek saya mulai dengan riset dan eksplorasi konsep, lalu dikembangkan menjadi karya visual yang komunikatif, modern, dan tetap mengedepankan estetika."</p>
+    </div>
+
+    <div class="section">
+      <h2>Karya 3: Web Development</h2>
+      <p>"Saya saat ini sedang mengembangkan keahlian di bidang web development dengan fokus pada bahasa pemrograman Python, khususnya menggunakan framework seperti Flask dan Django. Meskipun masih dalam tahap awal, saya telah memahami dasar-dasar backend development seperti routing, template rendering, serta koneksi ke database. Semangat belajar dan eksplorasi menjadi kekuatan saya dalam membangun website fungsional yang terus berkembang dari sisi fitur dan performa. Saya percaya bahwa setiap baris kode adalah langkah menuju solusi digital yang berdampak."</p>
+      <img src="images.png" alt="Karya 3" />
+    </div>
+  </div>
+
+
+  <audio id="bg-music" loop>
+    <source src="audio.mp3" type="audio/mpeg" />
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <script>
+    const audio = document.getElementById('bg-music');
+    const playMusic = () => {
+      audio.play().catch(e => {
+        console.log('Autoplay diblokir:', e);
+      });
+    };
+    document.addEventListener('click', playMusic);
+  </script>
+  
+  <footer>
+    &copy; 2025 Rizki Rhamadiansyah. All rights reserved.
+  </footer>
+</body>
+</html>

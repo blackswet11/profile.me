@@ -1,0 +1,152 @@
+:root {
+  --bg: #0e0d0d;
+  --text: #f0f0f0;
+  --accent: #c4a47a;
+  --card-bg: #1c1b1b;
+  --border: #3e3e3e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  padding: 2rem 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--accent);
+  margin-left: 1;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.section p {
+    margin-bottom: 1.5rem; /* Menambah jarak antar paragraf */
+    line-height: 1.6; /* Membuat teks lebih mudah dibaca */
+    color: #ddd; /* Warna teks untuk kontras dengan latar belakang */
+  }  
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--border);
+  color: #777;
+  margin-top: 3rem;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 2rem;  /* Ukuran ikon */
+    transition: color 0.3s;
+  }
+  
+  .socials a i {
+    margin-right: 0;  /* Menghilangkan jarak antar ikon */
+  }
+  
+  .socials a:hover {
+    color: #fff;
+  }
+  
+  .socials a i {
+    font-size: 2rem; /* Ukuran ikon */
+    color: var(--accent);
+    transition: transform 0.3s ease;
+  }
+  
+  .socials a:hover i {
+    transform: scale(1.1); /* Membesarkan sedikit ketika hover */
+  }  
+  .section img {
+    width: 30%; /* Biar responsif */
+    max-width: 600px; /* Ukuran maksimum */
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Bayangan cantik */
+    transition: transform 0.3s ease;
+  }
+  
+  .section img:hover {
+    transform: scale(1.03); /* Efek membesar sedikit saat hover */
+  }
+  
+  }
